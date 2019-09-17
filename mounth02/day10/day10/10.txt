@@ -1,0 +1,41 @@
+前情回顾
+
+1. 进程池： 大量进程需要频繁创建销毁
+
+   Pool()
+   apply_async()
+   close()
+   join()
+
+2. 进程间通信
+    * 管道通信 ： Pipe() p.send() p.recv()
+    * 消息队列 ： Queue()  q.get()  q.put()
+    * 共享内存 ： Value()  Array()
+    * 信号量：  Semaphore() acquire() release()
+
+练习：
+
+1. 分别用单进程 执行10次 count  io,记录时间
+    no thread CPU: 7.518454074859619
+    no thread IO: 4.570638418197632
+
+   用十个线程每个执行1次 count  io记录时间
+   multi Thread CPU: 6.699898958206177
+   multi Thread IO: 5.505040168762207
+
+   用十个进程每个执行1次 count  io记录时间
+   multi Process CPU: 3.598656415939331
+   multi Process io: 2.3045859336853027
+
+作业： 1. 进程线程理解  《python核心编程 第三版》
+      2. 课上有困难练习，再写
+      3. 复习网络，类的使用
+  
+
+
+
+
+
+
+
+

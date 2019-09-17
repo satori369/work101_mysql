@@ -1,0 +1,84 @@
+石博文
+shibw@tedu.cn
+1311794174@qq.com
+1907xxx
+
+休息：14:55~15:05
+
+终端：Linux中执行命令
+tarena@tedu:~$ python3
+python2版本
+         2.7  不再更新
+python3版本 不兼容
+         3.7
+
+
+文件式操作
+ls                              #在终端显示当前文件夹中的内容
+Ctrl+l                       #清除终端显示的内容
+gedit hello.py          #用Linux默认文本编辑器打开文件hello.py
+print('hello world')  #在文本编辑器中编写python代码
+Ctrl+s                       #保存
+
+pwd   查看工作目录路径
+/home/tarena
+/ 根        相当于window的计算机
+/home         保存所有用户的目录
+/home/tarena       tarena用户的目录
+
+cd 改变工作目录   休息：15:55~16:05
+cd 路径
+/home/tarena  绝对路径 从根开始找目录 一直找到想要的为止
+..  相对路径   相对于当前目录的上级目录
+.   相对路径   指代当前的目录
+/home/tarena/work 对于tarena来说 相当于./work
+/home 对于tarena来说是上一级目录  相当于../
+
+tarena@tedu:~$ pwd
+/home/tarena
+tarena@tedu:~$ cd ./work
+tarena@tedu:~/work$ pwd
+/home/tarena/work
+tarena@tedu:~/work$ cd ..
+tarena@tedu:~$ pwd
+/home/tarena
+
+在Linux中创建目录和文件
+mkdir 创建目录
+mkdir 目录名
+touch 创建文件
+touch 文件名
+
+终端中的快捷键
+Tab 代码补全  如果目录中有对应代码的内容 可以快速补全
+/home/tarena/a + tab
+                        aid1907/m + tab
+                                       mounth01
+Ctrl + l 清屏（将当前行移到终端最上方）
+Ctrl + - 缩小终端字体
+Ctrl + +(Shift =)放大终端字体
+
+demo01.py  演示代码
+exercise01.py  练习代码
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

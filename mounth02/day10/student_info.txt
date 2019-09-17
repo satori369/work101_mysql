@@ -1,0 +1,2 @@
+name:bob    age:30    score:90
+name:luck    age:25    score:99

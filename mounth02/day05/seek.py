@@ -1,0 +1,6 @@
+f = open('test','wb+')
+f.write(b'hello word')
+print(f.tell())
+f.seek(5,2)
+print(f.tell())
+f.close()

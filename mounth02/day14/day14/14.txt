@@ -1,0 +1,32 @@
+练习:
+
+1. 创建数据库 books
+
+   create database books charset=utf8;
+
+2. 数据库中创建表 book
+
+表字段如下:
+id title  author  price  publication comment
+
+   create table book (id int primary key auto_increment,title varchar(64) not null,author varchar(32) default "佚名",price float,publication varchar(256),comment text);
+
+
+3. 插入若干数据
+   price: 30--70
+   出版社 :  "中国教育","人民教育","机械工业",'中国邮电'
+
+4. 查找
+
+   * 查找出价格高于40的图书
+     select * from book where price > 40;
+   * 查找出 中国邮电出版社出版并且价格不到45的图书
+     select * from book where publication='中国邮电出版社' and price < 45;
+
+   * 查找价格在35 到 45之间的图书
+     select * from book where price between 35 and 45;
+
+   * 查找鲁迅先生的数据,只查找书名和价格
+     select title,price from book where author='鲁迅';
+
+
