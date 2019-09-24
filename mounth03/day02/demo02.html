@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>继承</title>
+
+    <!-- 外联 -->
+    <link rel="stylesheet" href="./css/index.css">
+    
+    <style>
+        /* #a,.red{
+            color:red
+        }
+        #a>p{
+            color:red;
+            background:blue
+        }
+        #b p{
+            color:blue;
+            background:red
+        } */
+
+        /* div>span{
+            background-color: tan;
+            width:20px;
+            display: inline-block;
+            text-align: center;
+        }
+        div>span:hover{
+            background-color: red;
+            color: white;
+        } */
+        
+        div>input:focus{
+            background-color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 标签名选择器,全局性很强,不具备全局性很强的样式,不建议使用 -->
+    <!-- <div id='a' style="text-align:center;color:hotpink">A
+        <div class='red' >B
+            <div style="color:blue">
+                C
+                <p>
+                    zheshisha
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="a">
+        <p>aa</p>
+    </div>
+demo
+    <div id="b">
+        <p>cc</p>
+    </div> -->
+    <!-- <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div> -->
+    
+    <div>
+    <input type="text">
+    </div>
+    <div>
+    <input type="text">
+    </div>
+    <span>6</span>
+</body>
+</html>
