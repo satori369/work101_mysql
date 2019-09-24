@@ -11,10 +11,7 @@ import pymysql
 
 class User:
     def __init__(self,database):
-        self.db = pymysql.connect(user='root',
-                                  passwd='123456',
-                                  database=database,
-                                  charset='utf8')
+        self.db = pymysql.connect(user='root',passwd='123456',database=database,charset='utf8')
         self.cur = self.db.cursor()
 
     def register(self,name,passwd):

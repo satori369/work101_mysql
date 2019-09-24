@@ -48,7 +48,7 @@ while True:
         print(e)
         continue
 
-    # 创建线程
+    # 创建进程
     p = Process(target=handle,args=(c,))
     p.daemon = True
     p.start()

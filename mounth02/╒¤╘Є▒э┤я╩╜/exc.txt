@@ -96,6 +96,83 @@ Loopback100 is up, line protocol is up
   Internet address is Unknown
   MTU 1500 bytes, BW 0 Kbit
      reliability Unknown, txload Unknown, rxload Unknown
+
+BVI100 is down, line protocol is down
+  Interface state transitions: 6
+  Hardware is Bridge-Group Virtual Interface, address is 10f3.116c.e6a7
+  Internet address is 192.168.1.100/24
+  MTU 1514 bytes, BW 10000000 Kbit (Max: 10000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,  loopback not set,
+  Last link flapped 3w1d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 3w1d, output 3w1d
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     3196 packets input, 151340 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 65 broadcast packets, 12 multicast packets
+     3133 packets output, 132666 bytes, 0 total output drops
+     Output 9 broadcast packets, 0 multicast packets
+
+BVI101 is down, line protocol is down
+  Interface state transitions: 2
+  Hardware is Bridge-Group Virtual Interface, address is 10f3.116c.e6a7
+  Internet address is 1.1.1.2/24
+  MTU 1514 bytes, BW 10000000 Kbit (Max: 10000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,  loopback not set,
+  Last link flapped 8w0d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input never, output 8w2d
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+     1 packets output, 42 bytes, 0 total output drops
+     Output 1 broadcast packets, 0 multicast packets
+
+BVI201 is up, line protocol is up
+  Interface state transitions: 1
+  Hardware is Bridge-Group Virtual Interface, address is 10f3.116c.e6a7
+  Internet address is 192.168.1.2/24
+  MTU 1514 bytes, BW 10000000 Kbit (Max: 10000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,  loopback not set,
+  Last link flapped 1w0d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:19:00, output 00:19:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     48 packets input, 2880 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 2 broadcast packets, 0 multicast packets
+     47 packets output, 1974 bytes, 0 total output drops
+     Output 1 broadcast packets, 0 multicast packets
+
+Loopback0 is up, line protocol is up
+  Interface state transitions: 1
+  Hardware is Loopback interface(s)
+  Internet address is 192.168.0.2/32
+  MTU 1500 bytes, BW 0 Kbit
+     reliability Unknown, txload Unknown, rxload Unknown
+  Encapsulation Loopback,  loopback not set,
+  Last link flapped 8w2d
+  Last input Unknown, output Unknown
+  Last clearing of "show interface" counters Unknown
+  Input/output data rate is disabled.
+
+Loopback100 is up, line protocol is up
+  Interface state transitions: 1
+  Hardware is Loopback interface(s)
+  Description: finalBVI1
+  address is 10f3.116c.e6a7
+  Internet address is Unknown
+  MTU 1500 bytes, BW 0 Kbit
   Encapsulation Loopback,  loopback not set,
   Last link flapped 8w2d
   Last input Unknown, output Unknown

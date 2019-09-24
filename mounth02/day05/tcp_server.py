@@ -11,7 +11,7 @@ import socket
 sockfd = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
 #绑定地址
-sockfd.bind(('176.215.133.193',8888))
+sockfd.bind(('176.215.133.193',9998))
 
 #设置监听
 sockfd.listen(5)

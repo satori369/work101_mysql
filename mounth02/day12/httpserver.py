@@ -70,6 +70,7 @@ class HTTPServer:
         else:
             filename = self.dir + info
         try:
+            print(filename)
             f = open(filename)
         except Exception:
             #没有网页
