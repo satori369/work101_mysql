@@ -75,3 +75,20 @@
             alter table 表名 change 旧字段名 新字段名 新数据类型;
      - 表重命名(rename)
             alter table 表名 rename 新表名;
+
+##tcp/udp
+socket      套接字    AF_INET,SOCK_STREAM
+                       AF_INET,SOCK_DGRAM
+HOST        主人
+PORT        端口
+ADDR        地址
+setsockopt  设置超时  SOL_SOCKET,SO_REUSEADDR
+bind        绑定
+
+listen      接听
+accept      接受  connect  连接
+except      除...之外
+
+recv        收到   recvfrom
+send        发送   sendto
+close       关闭
