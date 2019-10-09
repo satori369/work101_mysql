@@ -6,15 +6,15 @@ import pymysql
 db = pymysql.connect(host='localhost',
                      port = 3306,
                      user='root',
-                     password = '781124',
-                     database = 'work101_bus',
+                     password = '123456',
+                     database = 'bus',
                      charset='utf8')
 
 # 获取游标 (操作数据库,执行sql语句,得到执行结果)
 cur = db.cursor()
 
 # 获取数据
-sql="select * from bus2;"
+sql="select * from bus1;"
 cur.execute(sql)
 
 # 可以直接遍历游标
@@ -35,3 +35,4 @@ for i in cur:
 #
 cur.close()
 db.close()
+

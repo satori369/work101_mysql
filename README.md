@@ -1,4 +1,4 @@
-## 1. windows环境
+## 1. 操作环境
 
 **cmd命令**
 
@@ -8,11 +8,18 @@
 
 >set PATH=%PATH%;D:\Python\Scripts  设置系统变量pip
 
+**liunx命令**
+
+>sudo apt-get install unrar;sudo apt-get install unrar 下载压缩包
+
+>unrar x 文件名(rar) 解压
 ---
 
 ## 2. mysql
-
+    
    * 数据库操作
+     - Navicat premium 数据库界面工具
+     - source ./bus.sql;导入路径里的表
      - show databases;
      - create database  [db_name];
      - select database();
@@ -58,10 +65,10 @@
 
 ---
 
-##tcp/udp
+## 3. tcp/udp
 - socket      套接字
-  - **AF_INET,SOCK_STREAM**
-  - **AF_INET,SOCK_DGRAM**
+  - **AF_INET,SOCK_STREAM**TCP
+  - **AF_INET,SOCK_DGRAM**UDP
 - HOST        主人
 - PORT        端口
 - ADDR        地址
