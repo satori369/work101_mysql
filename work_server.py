@@ -1,6 +1,6 @@
 from socket import *
 from multiprocessing import Process
-from mysql.work101_mysql.work_sql import User
+from work_sql import User
 import sys
 
 db = User(database='bus')
@@ -32,6 +32,24 @@ def tianjia(c, data):
         db.insert('bus1', word)
         c.send(b'OK')
 
+def xiugai(c, data):
+    print(data)
+    ds = data.split(' ')
+    word = (ds[2], ds[3], ds[4])
+    print(word)
+    if ds[1] =='1':
+        db.update('bus1', word)
+        c.send(b'OK')
+
+def shanchu(c, data):
+    print(data)
+    ds = data.split(' ')
+    word = (ds[2],)
+    print(word)
+    if ds[1] == '1':
+        db.delete('bus1', word)
+        c.send(b'OK')
+
 def shoufa(c):
     db.create_cursor()
     while True:
@@ -42,10 +60,10 @@ def shoufa(c):
             chaxun(c, data)
         elif data[0] == 'i':
             tianjia(c, data)
-        # elif data[0] == 'Q':
-        #     do_query(connfd, data)
-        # elif data[0] == 'H':
-        #     do_history(connfd, data)
+        elif data[0] == 'u':
+            xiugai(c, data)
+        elif data[0] == 'd':
+            shanchu(c, data)
 
 def main():
     s = socket()

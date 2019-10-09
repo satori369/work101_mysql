@@ -5,7 +5,7 @@
 import pymysql
 
 class User:
-    def __init__(self,host='localhost',port = 3306,user = 'root',passwd = '123456',database = None,charset = 'utf8'):
+    def __init__(self,host='localhost',port = 3306,user = 'root',passwd = '781124',database = None,charset = 'utf8'):
         self.host = host
         self.port = port
         self.passwd = passwd
@@ -39,17 +39,33 @@ class User:
         self.cur.execute(sql)
         self.db.commit()
 
+    def update(self,table,word):
+        table = (table,)
+        word = table + word
+        print(word)
+        sql = "update %s set %s=%s where name='%s';" % word
+        self.cur.execute(sql)
+        self.db.commit()
+
+    def delete(self,table,word):
+        table = (table,)
+        word = table + word
+        print(word)
+        sql = "delete from %s where name='%s';"%word
+        self.cur.execute(sql)
+        self.db.commit()
+
 if __name__ == '__main__':
     db = User(database='bus')
     db.create_cursor()
 
-    table='bus1'
-    word = ('12','12','35','645','1885-5-1','1448-10-5','123','12','12','ff','14505050404')
-    # sqlt = "insert into %s" % table
-    # sql = sqlt + "(chexing,picibianhao,VIN,fadongji,yanshoudate,fayundate,danhao,jsdanwei,danweidizhi,name,tel)values ('%s','%s',%s,%s,'%s','%s',%s,'%s','%s','%s',%s);" % word
-    db.insert(table,word)
+    c = ('danhao', '456', 'name', '王五')
+    db.update('bus1',c)
 
+    # table='bus1'
+    # word = ('12','12','35','645','1885-5-1','1448-10-5','123','12','12','ff','14505050404')
+    # # sqlt = "insert into %s" % table
+    # # sql = sqlt + "(chexing,picibianhao,VIN,fadongji,yanshoudate,fayundate,danhao,jsdanwei,danweidizhi,name,tel)values ('%s','%s',%s,%s,'%s','%s',%s,'%s','%s','%s',%s);" % word
+    # db.insert(table,word)
 
-
-    print(word)
 
