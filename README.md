@@ -7,15 +7,47 @@
 >set PATH=%PATH%;D:\Python   设置系统变量python
 
 >set PATH=%PATH%;D:\Python\Scripts  设置系统变量pip
+> pip install pymysql
 
 **liunx命令**
 
->sudo apt-get install unrar;sudo apt-get install unrar 下载压缩包
+```liunx
+系统命令         安装
+sudo apt-get install unrar;sudo apt-get install unrar 下载压缩包
+unrar x 文件名(rar) 解压
 
->unrar x 文件名(rar) 解压
+自家执行
+pip3 install celery
+pip3 freeze|grep 'Django'
+版本不是1.11.8, 执行
+pip3 uninstall Django
+pip3 install Django==1.11.8
+
+
+sudo su 切换超级权限
+cd /var/lib/mysql-files/  mysql安全文件目录
+ll(ls -l) 查看目录下文件的详细信息
+chmod 666 scoreTable.csv 打开读写权限
+
+
+```
+rm -fr *  ???????????????????????????
+
 ---
 
 ## 2. mysql
+
+
+```mysql
+    3、select ...聚合函数 from 表名
+    1、where ...
+    2、group by ...
+    4、having ...
+    5、order by ...
+    6、limit ...;
+    
+    select * from mysql.user\G; 看用户
+```
     
    * 数据库操作
      - Navicat premium 数据库界面工具
@@ -82,3 +114,5 @@
 - recv        收到   recvfrom
 - send        发送   sendto
 - close       关闭
+- 250919354郭
+- 牛客网

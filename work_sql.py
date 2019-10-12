@@ -5,7 +5,7 @@
 import pymysql
 
 class User:
-    def __init__(self,host='localhost',port = 3306,user = 'root',passwd = '781124',database = None,charset = 'utf8'):
+    def __init__(self,host='localhost',port = 3306,user = 'root',passwd = '123456',database = None,charset = 'utf8'):
         self.host = host
         self.port = port
         self.passwd = passwd

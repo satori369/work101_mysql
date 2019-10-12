@@ -48,14 +48,17 @@ def main():
         i = input('1查询,2插入,3修改,4删除')
         if not i:
             break
-        elif i=='1':
+        elif i== '1':
             i = select()
-        elif i=='2':
+        elif i== '2':
             i = insert()
-        elif i=='3':
+        elif i== '3':
             i = update()
         elif i == '4':
             i = delete()
+        else:
+            print('请输入正确的序号')
+            continue
 
         s.send(i.encode())
         data = s.recv(1024).decode()

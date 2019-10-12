@@ -1,7 +1,7 @@
 from socket import *
 from multiprocessing import Process
-from work_sql import User
 import sys
+from mysql.work101_mysql.work_sql import User
 
 db = User(database='bus')
 
